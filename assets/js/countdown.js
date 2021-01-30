@@ -1,4 +1,4 @@
-//coundown script
+//countdown script
 function countdown(){
     var now = new Date();
     var eventDate = new Date(2021, 1, 18);//Year, index of month, date

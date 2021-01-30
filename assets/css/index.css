@@ -1,6 +1,16 @@
 
+#particles-js {
+	overflow: hidden;
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2c2e43;
+  background-repeat: no-repeat; 
+  background-size: fill;
+  z-index: -1;
+    background: black;
+}
 #circle {
-	overflow-x: hidden;
 	width: 100vw;
 	height: 99vh;
   top:0;
@@ -19,6 +29,7 @@
 .a {
    -webkit-animation: adjustHue 1s alternate infinite;
 }
+
      
 @-webkit-keyframes adjustHue {
    0% { -webkit-filter: hue-rotate(30deg); }
@@ -207,10 +218,12 @@ body {
 }
 
  .countdown{
-	font-size: 1.5em;
+	 background-color: black;
+	 padding: 10px;
+	font-size: 1.125em;
 	position: absolute;
 	text-align: center;
-	top: 21.5em;
+	top: 28.5em;
 	left: 50%;
 	transform: translate(-50%, -50%);
  }
@@ -363,8 +376,8 @@ body {
 
 
 .overlay {
-	height: 0%;
-	width: 100%;
+	height: 0vh;
+	width: 100vw;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -435,7 +448,9 @@ body {
   }
 
 /*ABOUT CARDS*/
-
+.aboutcontent{
+	overflow: hidden;
+}
 .ui {
 	width: 300px;
 	margin: 0 auto;
@@ -489,7 +504,27 @@ body {
 .ui_box__inner p a{
 	color:#88a2c9;
 }
-
+/* EchoAR */
+.echoar{
+	margin-top: 20px;
+}
+.echoar span{
+	display: table;
+	justify-self: center;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right:  20px;
+	font-size: 40px;
+	text-align: center;
+	/* border: 3px solid green; */
+	margin: auto;
+}
+.echoar p{
+	max-width: 800px;
+	font-size: 1.125rem;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 /*FAQ*/
 
 .faq-wrapper{
@@ -639,6 +674,10 @@ body {
 }
 
 /*Themes*/
+.annoyingThemesHeader{
+	font-size: 50px;
+	padding-bottom: -20px;
+}
 .theme-content{
 	display:grid;
 	grid-template-columns: 100%;
@@ -680,10 +719,8 @@ a{
 
 /*Events*/
 .accordionContainer{
-
-	margin: auto;
-	margin-right: 60px;
-	margin-left: 60px ;
+	margin: 0 auto;
+	max-width: 90vw;
 
 }
 .accordion{
@@ -817,7 +854,8 @@ a{
 		vertical-align: middle;
 		padding: 20px 0;
 	}
-	.accordion{
+	.countdown{
+	margin-top: 9em;
 	}
 	.first span{
 		display: flex;
