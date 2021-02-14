@@ -390,7 +390,7 @@ body {
   
   .overlay-content {
 	position: relative;
-	top: 25%;
+	top: 10%;
 	width: 100%;
 	text-align: center;
 	margin-top: 30px;
@@ -697,6 +697,29 @@ body {
 	margin-top:20px;
 }
 
+/*Team*/
+.organisers-grid-container {
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	width: 70%;
+  	margin: 0 auto;
+}
+
+.organisers-grid-item {
+	text-align: center;
+}
+
+.hods-grid-container {
+	display: grid;
+  	grid-template-columns: auto auto auto auto;
+  	width: 90%;
+  	margin: 0 auto;
+}
+
+.hods-grid-item {
+	text-align: center;
+}
+
 /*Sponsors*/
 .sponsor-grid-container {
   display: grid;
@@ -798,8 +821,24 @@ a{
 	  padding-right: 10px;
   }
 
+  .leftOrganiser{
+	  text-align: right;
+  }
+
 
 /*Media Queries*/
+@media only screen and (max-width:850px) {
+	.organisers-grid-container{
+		grid-template-columns: auto;
+	}
+	.leftOrganiser{
+		text-align: center;
+	}
+	.hods-grid-container{
+		grid-template-columns: auto;
+	}
+}
+
 @media only screen and (min-width:730px){
 	.neon{
 		font-size: 8em;
