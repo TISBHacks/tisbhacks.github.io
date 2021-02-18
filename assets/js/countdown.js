@@ -1,7 +1,7 @@
 //countdown script
 function countdown(){
     var now = new Date();
-    var eventDate = new Date("2021-02-20T06:00:00Z");//Year, index of month, date
+    var eventDate = new Date("2021-02-20T18:00:00+05:30");//Year, index of month, date
 
     var currentTime = now.getTime();
     var eventTime = eventDate.getTime();
